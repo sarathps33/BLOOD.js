@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(135deg,red,blue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main{
+    padding: 20px;
+    width: 600px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: white;
+    justify-items: center;
+    border: 1px solid black;
+ 
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 3px;
+    border: 2px solid #080707;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.radio{
+    margin: 30px;
+}
+label {
+    margin-right: 10px;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+
+}
+.btn>button{
+    padding: 5px 10px;
+    background-color: rgb(9, 255, 234);
+    color: rgb(253, 251, 251);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn>button:hover{
+    background-color: rgb(210, 143, 143);
+}

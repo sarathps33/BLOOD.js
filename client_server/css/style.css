@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     padding: 5px 10px;
-    background-color: red;
+    background-color: rgb(247, 0, 255);
     align-items: center;
     color: white;
     width: 100%;
@@ -19,13 +19,7 @@
 .list>li{
     margin:7px 10px;
 }
-marquee{
-    color: red;
-    background-color: wheat;
-    padding: 10px 0px;
-    font-weight: 90px;
-    font-size: 20px;
-}
+
 form{
     margin-top: 60px;
     display: flex;
@@ -44,7 +38,7 @@ input[type="text"]{
 .btn1>button{
    padding: 5px 10px;
    margin-right: 10px;
-   background-color: rgb(210, 55, 55);
+   background-color: rgb(231, 6, 130);
    color: white;
    border: none;
    border-radius: 5px;
@@ -58,7 +52,7 @@ input[type="text"]{
 .add{
     margin-top: 20px;
     padding: 5px 8px;
-    background-color: rgb(240, 26, 26);
+    background-color: rgb(26, 65, 240);
     color:blanchedalmond;
     font-size:large;
     border: none;
