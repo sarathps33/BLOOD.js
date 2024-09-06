@@ -3,12 +3,12 @@ const fs= require("fs")
 const url=require("url")
 const queryString = require("querystring");
 const { MongoClient } = require("mongodb");
-const { error,log } = require("console")
+const { error } = require("console")
 const client = new 
 MongoClient("mongodb://127.0.0.1:27017/")
 const app=http.createServer((req,res)=>{
-    const db = client.db("Blood_bank");
-  const collection = db.collection("donors");
+    const db = client.db("blood");
+  const collection = db.collection("donor");
   const newUrl = url.parse(req.url);
   console.log(req.method);
   console.log(newUrl);
@@ -33,7 +33,7 @@ const app=http.createServer((req,res)=>{
         res.writeHead(200, { "Content-type": "text/css"});
         res.end(fs.readFileSync("../client_server/css/donor.css"))
     }
-    if(req.method == "post" && path.pathname =="/pages/submit"){
+    if(req.method == "POST" && newUrl.pathname =="/submit"){
         let body=""
     req.on("data",(fake)=>{
         console.log(fake);
@@ -44,6 +44,7 @@ const app=http.createServer((req,res)=>{
     if(body!=null){
         const formData = queryString.parse(body);
         console.log(formData);
+        
         collection
         .insertOne(formData)
         .then(() => {
